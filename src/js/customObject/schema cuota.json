@@ -1,0 +1,87 @@
+{
+  "labels": {
+    "singular": "Cuota",
+    "plural": "Cuotas"
+  },
+  "requiredProperties": ["cuota_separacion", "fecha_cuota", "numero_cuota", "valor"],
+  "searchableProperties": ["cuota_separacion", "fecha_cuota", "numero_cuota", "valor", "fixed_value"],
+  "secondaryDisplayProperties": ["fecha_cuota", "valor"],
+  "associatedObjects": ["CONTACT", "DEAL"],
+  "name": "cuota",
+  "primaryDisplayProperty": "name",
+  "properties": [
+    {
+      "name": "cuota_separacion",
+      "label": "Cuota Separación",
+      "isPrimaryDisplayLabel": true,
+      "description": "Es una cuota de separacion o es un pago mensual de la cuota inicial",
+      "displayOrder": 5,
+      "type": "bool",
+      "fieldType": "booleancheckbox",
+      "options": [
+        {
+          "label": "True",
+          "value": "true",
+          "displayOrder": 0
+        },
+        {
+          "label": "False",
+          "value": "false",
+          "displayOrder": 1
+        }
+      ]
+    },
+    {
+      "name": "fecha_cuota",
+      "label": "Fecha Cuota",
+      "description": "Fecha estimada para el pago de la cuota",
+      "displayOrder": 4,
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "name": "fixed_value",
+      "label": "Valor Fijado",
+      "description": "Es un cuota modificada por el cliente ya sea por un valor mayor o menor de acuerdo a su capacidad de pago",
+      "options": [
+        {
+          "label": "True",
+          "value": "true",
+          "displayOrder": 0
+        },
+        {
+          "label": "False",
+          "value": "false",
+          "displayOrder": 1
+        }
+      ],
+      "type": "bool",
+      "fieldType": "booleancheckbox",
+      "displayOrder": 6
+    },
+    {
+      "name": "numero_cuota",
+      "label": "Numero de Cuota",
+      "description": "Numero de la cuota",
+      "displayOrder": 3,
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "name": "name",
+      "label": "Nombre ID",
+      "description": "Identificador de la cuota",
+      "displayOrder": 1,
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "name": "valor",
+      "label": "Valor",
+      "description": "Valor o precio de la cuota",
+      "displayOrder": 2,
+      "type": "number",
+      "fieldType": "number"
+    }
+  ]
+}

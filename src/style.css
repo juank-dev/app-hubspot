@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #1979f7;
+  --primary-color-20: #f7196330;
+  --primary-color-dark: #1300ba;
+  --light-color: #ededed;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0 !important;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+/* General Styles */
+.btn {
+  padding: 0.75rem 2rem;
+}
+
+.btn.btn-with-icon {
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  border-color: #fff;
+}
+video,
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style-position: inside;
+}
+/* Navbar */
+.navbar-container {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  border: none !important;
+}
+.navbar-light .navbar-brand {
+  color: white;
+}
+.navbar-toggler {
+  background-color: #dc3545;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(235, 235, 235);
+}
+
+/* Section Install */
+
+.section-install {
+  margin-top: 63px;
+  min-height: calc(100vh - 321px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-install {
+  width: 800px;
+  box-shadow: 0 0 3px 3px #0000003b;
+  border-radius: 1rem;
+  min-height: 300px;
+  margin: 2rem 0;
+}
+.card-install .info-install,
+.card-install .info-success {
+  text-align: start;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.card-install .info-success {
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+}
+.card-body {
+  justify-content: center;
+}
+.header-card {
+  background-color: var(--primary-color);
+  border-radius: 1rem 1rem 0 0;
+  color: white;
+  border-bottom: 1px solid lightgrey;
+  padding: 0.6rem;
+}
+
+/* Footer */
+
+.pre-footer {
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color-dark);
+}
+
+footer .text-muted,
+.pre-footer .text-muted {
+  color: #bbb !important;
+}
+
+footer p,
+.pre-footer p {
+  margin: 0;
+}
+
+.pre-footer img {
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+  transition: transform 0.5s ease-in-out;
+}
+
+.pre-footer img:hover {
+  transform: translateY(-5px);
+}
+
+[id] {
+  scroll-margin-top: 75px;
+}
+
+.btn-outline-light:hover {
+  background-color: black;
+}
+/* scroll */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 26, 255, 0.3);
+
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px 0px rgb(1, 52, 255);
+}
+
+/* Not too many browser support this yet but it's good to add! */
+@media (prefers-contrast: high) {
+  .orb-canvas {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+}
+
+@media only screen and (max-width: 840px) {
+}
+
+@media only screen and (max-width: 600px) {
+  body .text-muted {
+    color: #ffffff !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 20px 0px rgb(250, 250, 250);
+  }
+}

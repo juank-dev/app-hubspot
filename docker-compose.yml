@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  node-back:
+    build:
+      context: .
+      dockerfile: build/production.Dockerfile
+    image: 'ringcentral-api'
+    restart: always
+    user: 'root'
+    env_file: .env
+    ports:
+      - 3006:3000

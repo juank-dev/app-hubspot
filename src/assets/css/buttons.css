@@ -1,0 +1,22 @@
+.group__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.group__btns button {
+  border: 0;
+  background-color: var(--primary-color);
+  padding: 6px 14px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.group__btns button a {
+  color: white;
+  text-decoration: none;
+}

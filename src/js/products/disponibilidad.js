@@ -1,0 +1,30 @@
+export const dataDisponibilidad = {
+  name: 'available',
+  label: 'Disponibilidad',
+  description: 'Propiedad que nos informa si el producto esta disponible o reservado',
+  groupName: 'cotizador_inmobiliario',
+  type: 'enumeration',
+  fieldType: 'booleancheckbox',
+  displayOrder: 5,
+  fieldLevelPermission: null,
+  options: [
+    {
+      label: 'Sí',
+      description: null,
+      displayOrder: 0,
+      hidden: false,
+      doubleData: null,
+      readOnly: false,
+      value: 'true',
+    },
+    {
+      label: 'No',
+      description: null,
+      displayOrder: 1,
+      hidden: false,
+      doubleData: null,
+      readOnly: false,
+      value: 'false',
+    },
+  ],
+};
