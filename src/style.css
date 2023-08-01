@@ -1,7 +1,6 @@
 :root {
-  --primary-color: #1979f7;
-  --primary-color-20: #f7196330;
-  --primary-color-dark: #1300ba;
+  --primary-color: #00b709;
+  --primary-color-dark: #097100;
   --light-color: #ededed;
 }
 
@@ -165,13 +164,13 @@ footer p,
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px rgba(0, 26, 255, 0.3);
+  box-shadow: inset 0 0 2px var(--primary-color-dark);
 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  box-shadow: inset 0 0 20px 0px rgb(1, 52, 255);
+  box-shadow: inset 0 0 20px 0px var(--primary-color);
 }
 
 /* Not too many browser support this yet but it's good to add! */
